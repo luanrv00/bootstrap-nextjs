@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+if [ -z "$(docker images -q bootstrap-nextjs-app 2> /dev/null)" ];then
+  docker build -t bootstrap-nextjs-app -f docker/Dockerfile.dev .
+fi

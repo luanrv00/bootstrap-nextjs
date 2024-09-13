@@ -1,0 +1,8 @@
+services:
+  e2e:
+    image: bootstrap-nextjs-e2e
+    container_name: bootstrap-nextjs-e2e
+    volumes:
+      - ..:/app
+      - /app/node_modules
+    command: yarn test:e2e

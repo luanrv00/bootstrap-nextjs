@@ -1,0 +1,6 @@
+FROM node:20-slim
+COPY . /app
+WORKDIR /app
+RUN yarn install --frozen-lockfile
+RUN yarn build
+EXPOSE 3000 6006

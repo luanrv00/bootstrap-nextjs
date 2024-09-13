@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+bin/dev
+docker exec bootstrap-nextjs-app yarn storybook
