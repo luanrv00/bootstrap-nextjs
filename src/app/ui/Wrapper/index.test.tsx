@@ -5,7 +5,7 @@ import {Wrapper} from '.'
 
 describe('Wrapper', () => {
   it('render Wrapper', () => {
-    render(<Wrapper/>)
+    render(<Wrapper />)
     expect(screen.getByRole('heading')).toBeInTheDocument()
   })
 })

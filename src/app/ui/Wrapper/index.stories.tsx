@@ -1,5 +1,5 @@
 import type {StoryObj, Meta} from '@storybook/react'
-import { Wrapper } from '.'
+import {Wrapper} from '.'
 
 const meta: Meta<typeof Wrapper> = {
   component: Wrapper,

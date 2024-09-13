@@ -1,7 +1,6 @@
-import { test, expect } from '@playwright/test';
+import {test, expect} from '@playwright/test'
 
-test('render Wrapper', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.getByRole('heading')).toHaveText(/wrapper/i);
-});
-
+test('render Wrapper', async ({page}) => {
+  await page.goto('/')
+  await expect(page.getByRole('heading')).toHaveText(/wrapper/i)
+})
