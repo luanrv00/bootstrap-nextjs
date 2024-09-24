@@ -8,4 +8,9 @@ services:
     volumes:
       - ..:/app
       - /app/node_modules
+    networks:
+      - default
     command: yarn dev
+networks:
+  default:
+    driver: bridge
